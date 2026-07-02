@@ -1,75 +1,201 @@
-# Sangam Dairy \u2014 React + Vite Rebuild
+# 🥛 Sangam Dairy Website Clone
 
-A complete, production-style React rebuild of the Sangam Dairy website, built with **Vite**,
-**React 18**, **React Router** and **Tailwind CSS**. All images, fonts and assets are served
-locally \u2014 there are no runtime dependencies on the original `sangamdairy.com` site.
+A modern React-based clone of the official Sangam Dairy website with an additional **Quality Assurance** page designed to showcase dairy quality standards and testing processes.
 
-## Getting started
+## 🌐 Live Demo
 
-```bash
-npm install
-npm run dev
-```
+👉 https://sangam-dairy.vercel.app/
 
-Then open the printed local URL (usually `http://localhost:5173`).
+---
 
-To create a production build:
+## 📖 Project Overview
 
-```bash
-npm run build
-npm run preview
-```
+This project recreates the official Sangam Dairy website using modern web technologies while maintaining a clean, responsive, and user-friendly interface.
 
-## Project structure
+In addition to recreating the original website, a new **Quality Assurance** page has been added as part of the assignment.
+
+---
+
+## ✨ Features
+
+- Responsive Homepage
+- Hero Banner
+- Navigation Menu
+- Product Showcase
+- Infrastructure Section
+- Corporate Information
+- Press & Tenders
+- Contact Page
+- Careers Page
+- Image Gallery
+- Video Gallery
+- Awards Section
+- Footer
+- Mobile Responsive Design
+- Modern UI
+- Fast Loading
+
+### 🆕 Added Feature
+
+## Quality Assurance Page
+
+Includes:
+
+- Milk Collection Process
+- Laboratory Testing
+- Processing & Pasteurization
+- Cold Chain Distribution
+- Batch Quality Checker
+- Interactive Batch Validation
+
+---
+
+## 🛠️ Built With
+
+- React
+- Vite
+- React Router DOM
+- CSS
+- HTML5
+- JavaScript (ES6+)
+
+---
+
+## 📂 Project Structure
 
 ```
 src/
-  assets/images/     All downloaded site images + a central index.js re-export map
-  components/        Reusable UI building blocks (Navbar, Footer, HeroSlider, cards, etc.)
-  data/               siteData.js \u2014 all structured text content extracted from the
-                      original site (nav, products, stats, tenders, quality-assurance copy...)
-  pages/              One component per route
-  App.jsx             Router + shared layout (Navbar / Footer / floating widgets)
-  main.jsx            App entry point
-  index.css           Tailwind base + global styles / small custom animations
+│
+├── assets/
+├── components/
+├── pages/
+│   ├── Home.jsx
+│   ├── Products.jsx
+│   ├── Corporate.jsx
+│   ├── Infrastructure.jsx
+│   ├── Careers.jsx
+│   ├── Contact.jsx
+│   ├── Gallery.jsx
+│   ├── QualityAssurance.jsx
+│
+├── App.jsx
+├── main.jsx
 ```
 
-## Pages / routes
+---
 
-| Route                  | Page                                            |
-| ----------------------- | ------------------------------------------------ |
-| `/`                     | Home (hero, about, area of operation, why-choose-us stats, products teaser, gallery, awards, QA teaser) |
-| `/corporate`            | Founders, Management, Milestones, CSR, Infrastructure |
-| `/dairy`                | Cattle Feed Operations, Seeds |
-| `/products`             | Full product catalogue, grouped by category |
-| `/services`             | Tech. Services & Welfare Schemes |
-| `/press-tenders`        | Press Room + open Tenders |
-| `/careers`              | Openings + application form |
-| `/contact`              | Contact details, map, form, Parlour |
-| `/quality-assurance`    | **New page** \u2014 QA pillars + interactive Batch Quality Checker |
-| `/privacy-policy`, `/terms-conditions`, `/admin` | Footer/utility pages |
+## 🚀 Installation
 
-## Quality Assurance (new section)
+Clone the repository
 
-A brand-new "Quality Assurance" item was added to the main navigation, linking to a dedicated
-page that matches the site's visual language (Poppins/Oswald type, brand blue `#0B45BB`,
-rounded cards, soft shadows). It covers:
+```bash
+git clone https://github.com/yourusername/sangam-dairy.git
+```
 
-- Milk Collection
-- Laboratory Testing
-- Processing
-- Packaging
-- Distribution
-- Certifications
-- An interactive **Batch Quality Checker** (`src/components/BatchQualityChecker.jsx`) built as a
-  real React component with local state \u2014 enter any Batch ID to see a simulated Fat / SNF /
-  Temperature reading and pass/fail status.
+Go inside project
 
-## Notes
+```bash
+cd sangam-dairy
+```
 
-- All 70+ images from the original download are stored under `src/assets/images/` and imported
-  through the ES module bundler (no external/CDN image URLs are used anywhere).
-- Fonts (`Poppins`, `Oswald`) are loaded from Google Fonts in `index.html`; swap for local
-  `@font-face` files if a fully offline build is required.
-- Colours, spacing and typography were reverse-engineered from the original Tailwind-generated
-  CSS bundle (`entry.*.css`) found in the provided download.
+Install dependencies
+
+```bash
+npm install
+```
+
+Run locally
+
+```bash
+npm run dev
+```
+
+Open
+
+```
+http://localhost:5173
+```
+
+---
+
+## 📸 Screenshots
+
+### Homepage
+
+<img width="2556" height="1483" alt="image" src="https://github.com/user-attachments/assets/ab2d9a14-cc88-4fff-8916-d2ec44381167" />
+
+
+### Products
+
+<img width="2557" height="1492" alt="image" src="https://github.com/user-attachments/assets/e3f70028-0319-411c-bbc0-19d7a1c29300" />
+
+
+### Image Gallery
+
+<img width="2552" height="1500" alt="image" src="https://github.com/user-attachments/assets/1b8f07d1-77db-47f2-8771-bae121d7c083" />
+
+
+### Quality Assurance
+
+<img width="2552" height="1495" alt="image" src="https://github.com/user-attachments/assets/41179048-eb5c-45dd-950e-61a30be360c8" />
+
+
+---
+
+## 🎯 Objective
+
+The objective of this project is to recreate the Sangam Dairy website and extend it with a custom Quality Assurance page demonstrating understanding of frontend development, component design, routing, and responsive layouts.
+
+---
+
+## 📱 Responsive Design
+
+✔ Desktop
+
+✔ Laptop
+
+✔ Tablet
+
+✔ Mobile
+
+---
+
+## ⚡ Performance
+
+- Fast Loading
+- Optimized Images
+- Responsive Layout
+- Component-Based Architecture
+
+---
+
+## 📌 Future Improvements
+
+- Backend Integration
+- Product Search
+- User Authentication
+- Online Store
+- Dairy Product Ordering
+- CMS Integration
+
+---
+
+## 👨‍💻 Author
+
+**Bodhi Sathwik Kommalapati**
+
+GitHub:
+https://github.com/bodhisathwik
+
+LinkedIn:
+https://linkedin.com/in/YOUR-LINKEDIN
+
+---
+
+## 📄 License
+
+This project was developed for educational and assignment purposes.
+
+The original design and content belong to Sangam Dairy.
+
+No copyright infringement is intended.
