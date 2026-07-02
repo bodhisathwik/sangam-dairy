@@ -188,7 +188,7 @@ GitHub:
 https://github.com/bodhisathwik
 
 LinkedIn:
-https://linkedin.com/in/YOUR-LINKEDIN
+https://www.linkedin.com/in/bodhi-sathwik-kommalapati-028876303/
 
 ---
 
